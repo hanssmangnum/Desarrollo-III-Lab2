@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicio - Listado</title>
+</head>
+<body>
+    <div th:replace="~{fragments/menu :: menu}"></div>
+
+    <!-- Responsable: Persona B -->
+    <h1>Servicios</h1>
+
+    <!-- TODO: mensaje de confirmacion:
+         <p th:if="${mensaje}" th:text="${mensaje}"></p> -->
+
+    <!-- TODO: boton "Nuevo" -> th:href="@{/servicios/nuevo}" -->
+
+    <!-- TODO: tabla con columnas: id, fecha, descripcion, costo, vehiculo (select), acciones.
+         Mostrar la placa del vehiculo en cada fila.
+         Recorrer con th:each="item : ${lista}"
+         Botones Editar (/servicios/editar/{id}) y Eliminar (/servicios/eliminar/{id}) -->
+</body>
+</html>
